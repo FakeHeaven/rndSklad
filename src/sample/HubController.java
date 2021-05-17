@@ -75,8 +75,6 @@ public class HubController implements Initializable {
         tvTabela1.setItems(getIzdelekData());
         if (tvTabela1.getSelectionModel().getSelectedItem() != null) {
             Zaloga selectedPerson = (Zaloga) tvTabela1.getSelectionModel().getSelectedItem();
-            System.out.println(selectedPerson.getImeIzdelka());
-            System.out.println(selectedPerson.getCenaIzdelka());
             narociloData.add(new Narocilo(selectedPerson.getImeIzdelka(), (Integer) sKolicina.getValue() ,selectedPerson.getCenaIzdelka()));
             cena += (Integer) sKolicina.getValue() * selectedPerson.getCenaIzdelka();
             lCena.setText(String.valueOf(cena) + "€");
