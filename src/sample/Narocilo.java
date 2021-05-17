@@ -5,21 +5,19 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import java.time.LocalDate;
-
-public class Izdelek {
+public class Narocilo {
     private final StringProperty imeIzdelka;
     private final IntegerProperty zalogaIzdelka;
     private final IntegerProperty cenaIzdelka;
 
 
 
-    public Izdelek() {
+    public Narocilo() {
         this(null, 0, 0);
     }
 
 
-    public Izdelek(String imeIzdelka, Integer zalogaIzdelka, Integer cenaIzdelka) {
+    public Narocilo(String imeIzdelka, Integer zalogaIzdelka, Integer cenaIzdelka) {
         this.imeIzdelka = new SimpleStringProperty(imeIzdelka);
         this.zalogaIzdelka = new SimpleIntegerProperty(zalogaIzdelka);
         this.cenaIzdelka = new SimpleIntegerProperty(cenaIzdelka);
