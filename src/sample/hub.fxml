@@ -42,7 +42,7 @@
             </TableView>
             <Button fx:id="bDodaj" mnemonicParsing="false" onAction="#dodajIzdelek" prefHeight="26.0" prefWidth="152.0" text="Dodaj" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Spinner fx:id="sKolicina" editable="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button fx:id="bNaroci" mnemonicParsing="false" text="Naroci" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="bNaroci" mnemonicParsing="false" onAction="#naroci" text="Naroci" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
             <TableView fx:id="tvTabela1" layoutX="15.0" layoutY="190.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowSpan="3">
                <columns>
                   <TableColumn fx:id="imeIzdelkaColumn" prefWidth="334.0" text="Izdelek" />
@@ -63,6 +63,7 @@
                   </Label>
                </children>
             </AnchorPane>
+            <Button mnemonicParsing="false" onAction="#preklici" text="Preklici" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

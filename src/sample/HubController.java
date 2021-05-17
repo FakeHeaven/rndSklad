@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -76,5 +77,13 @@ public class HubController implements Initializable {
             cena += (Integer) sKolicina.getValue() * selectedPerson.getCenaIzdelka();
             lCena.setText(cena + "€");
         }
+    }
+
+    public void naroci(ActionEvent actionEvent) throws IOException {
+        Main.setRoot("end");
+    }
+
+    public void preklici(ActionEvent actionEvent) {
+        System.exit(0);
     }
 }
