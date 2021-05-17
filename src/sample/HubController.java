@@ -47,17 +47,14 @@ public class HubController implements Initializable {
 
         tvTabela1.setOnMouseClicked((MouseEvent event) -> {
             if (event.getClickCount() > 1) {
-                onEdit();
+                onClick();
             }
         });
     }
 
-    public void onEdit() {
-        // check the table's selected item and get selected item
+    public void onClick() {
         if (tvTabela1.getSelectionModel().getSelectedItem() != null) {
             Zaloga selectedPerson = (Zaloga) tvTabela1.getSelectionModel().getSelectedItem();
-            System.out.println(selectedPerson.getImeIzdelka());
-            System.out.println(selectedPerson.getCenaIzdelka());
             lMax.setText("(Max: " + selectedPerson.getZalogaIzdelka() + ")");
             SpinnerValueFactory svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, selectedPerson.getZalogaIzdelka());
             sKolicina.setValueFactory(svf);
@@ -77,7 +74,7 @@ public class HubController implements Initializable {
             Zaloga selectedPerson = (Zaloga) tvTabela1.getSelectionModel().getSelectedItem();
             narociloData.add(new Narocilo(selectedPerson.getImeIzdelka(), (Integer) sKolicina.getValue() ,selectedPerson.getCenaIzdelka()));
             cena += (Integer) sKolicina.getValue() * selectedPerson.getCenaIzdelka();
-            lCena.setText(String.valueOf(cena) + "€");
+            lCena.setText(cena + "€");
         }
     }
 }

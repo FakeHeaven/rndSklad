@@ -26,8 +26,8 @@
             <children>
                 <Label text="Uporabnisko ime" />
                 <Label text="Geslo" GridPane.rowIndex="2" />
-                <TextField GridPane.rowIndex="1" />
-                <TextField GridPane.rowIndex="3" />
+                <TextField fx:id="tfU" GridPane.rowIndex="1" />
+                <TextField fx:id="tfG" GridPane.rowIndex="3" />
             </children>
         </GridPane>
     </center>
