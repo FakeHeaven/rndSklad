@@ -1,4 +1,4 @@
-package sample;
+package RIS;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

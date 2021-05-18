@@ -1,4 +1,4 @@
-package sample;
+package RIS;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;

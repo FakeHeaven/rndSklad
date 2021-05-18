@@ -1,23 +1,23 @@
-package sample;
+package RIS;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class Zaloga {
+public class Narocilo {
     private final StringProperty imeIzdelka;
     private final IntegerProperty zalogaIzdelka;
     private final IntegerProperty cenaIzdelka;
 
 
 
-    public Zaloga() {
+    public Narocilo() {
         this(null, 0, 0);
     }
 
 
-    public Zaloga(String imeIzdelka, Integer zalogaIzdelka, Integer cenaIzdelka) {
+    public Narocilo(String imeIzdelka, Integer zalogaIzdelka, Integer cenaIzdelka) {
         this.imeIzdelka = new SimpleStringProperty(imeIzdelka);
         this.zalogaIzdelka = new SimpleIntegerProperty(zalogaIzdelka);
         this.cenaIzdelka = new SimpleIntegerProperty(cenaIzdelka);

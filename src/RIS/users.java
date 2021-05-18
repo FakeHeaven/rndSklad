@@ -1,4 +1,4 @@
-package sample;
+package RIS;
 
 public class users {
 
